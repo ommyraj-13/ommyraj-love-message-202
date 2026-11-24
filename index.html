@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You ❤️</title>
+<style>
+* {box-sizing:border-box}
+body {
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  font-family:Arial,sans-serif;
+  color:white;
+  background:linear-gradient(135deg,#ff416c,#ff4b8b,#8e44ad);
+  overflow:hidden;
+}
+.container {padding:25px;max-width:420px}
+button {
+  border:0;
+  padding:17px 27px;
+  border-radius:35px;
+  background:white;
+  color:#ff416c;
+  font-size:18px;
+  font-weight:bold;
+}
+#love {display:none;animation:show 1.5s ease}
+h1 {font-size:39px}
+p {font-size:20px;line-height:1.7}
+.heart {font-size:65px;animation:beat 1s infinite}
+@keyframes beat {
+  50% {transform:scale(1.25)}
+}
+@keyframes show {
+  from {opacity:0;transform:scale(.5)}
+  to {opacity:1;transform:scale(1)}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div id="start">
+  <h2>Hey My Special Person 🥹💕</h2>
+  <p>Kuna ujumbe mdogo kwa ajili yako...</p>
+  <button onclick="openLove()">BONYEZA HAPA ❤️</button>
+</div>
+
+<div id="love">
+  <div class="heart">❤️</div>
+  <h1>NAKUPENDA 😘</h1>
+  <p>
+    Wewe ni furaha ya moyo wangu 🥺💕
+    <br>
+    Kila siku unazidi kuwa wa thamani kwangu.
+    <br>
+    Nakupenda sana, my love 😍💋
+    <br><br>
+    YOU ARE MY SPECIAL PERSON ❤️‍🔥
+  </p>
+  <div style="font-size:35px">💍❤️🥹😘</div>
+</div>
+
+</div>
+<script>
+function openLove() {
+ document.getElementById("start").style.display="none";
+ document.getElementById("love").style.display="block";
+}
+</script>
+</body>
+</html>
